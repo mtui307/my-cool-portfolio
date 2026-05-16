@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import Image from "next/image"; // <-- 1. Import the smart Next Image component
+import myProfilePic from "../pic.jpeg";
 
 // Your Computer Science Project Data Array
 const PROJECTS_DATA = [
@@ -93,9 +95,10 @@ export default function Home() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="md:col-span-5 h-[450px] w-full bg-gray-950 border border-gray-900 overflow-hidden relative group"
         >
-          <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" 
-            alt="Profile" 
+          <Image 
+            src={myProfilePic} 
+            alt="Profile Picture" 
+            placeholder="blur" // Adds a beautiful smooth blur while loading
             className="w-full h-full object-cover grayscale contrast-125 brightness-75 group-hover:grayscale-0 transition-all duration-1000 ease-in-out"
           />
           <div className="absolute bottom-4 left-4 font-mono text-[10px] text-gray-500 bg-black/50 backdrop-blur-sm px-2 py-1 border border-gray-800">

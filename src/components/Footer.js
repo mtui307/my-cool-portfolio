@@ -28,7 +28,7 @@ export default function Footer() {
             href="mailto:hello@yourdomain.com" 
             className="text-xl font-bold hover:text-gray-400 transition-colors cursor-none border-b border-gray-800 pb-1"
           >
-            hello@yourdomain.com
+            innocentmtui307@gmail.com
           </a>
         </div>
 
@@ -46,7 +46,7 @@ export default function Footer() {
 
       {/* Bottom Copyright */}
       <div className="mt-24 pt-8 border-t border-gray-900 flex justify-between items-center text-xs text-gray-600">
-        <p>© 2026 YOUR NAME. ALL RIGHTS RESERVED.</p>
+        <p>© 2026 INOCENT MTUI. ALL RIGHTS RESERVED.</p>
         <p className="font-mono">BUILT WITH NEXT.JS & FRAMER MOTION</p>
       </div>
     </footer>
